@@ -11,8 +11,8 @@ fun main() {
      */
 
     //Exemplo chamando função sem retorno
-    /*
-    var vida = 10
+
+    var vida = readln().toInt()
 
     //Inimigo deu 3 de dano
     vida -= 3
@@ -28,7 +28,7 @@ fun main() {
     vida -= 6
 
     verificarVida(vida)
-     */
+
 
     //Exemplo chamando função com retorno
     /*
@@ -43,7 +43,7 @@ fun main() {
     println("O seu nome em letras maiúsculas é: $nomeMaiusculo")
      */
 
-    println("A soma entre 3 e 4 é: ${soma(3, 4)}")
+    //println("A soma entre 3 e 4 é: ${soma(3, 4)}")
 }
 
 
