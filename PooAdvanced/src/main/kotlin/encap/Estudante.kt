@@ -19,6 +19,12 @@ class Estudante (var nome: String, val ra: String){
         }
     }
 
+    fun addMateria(materia: String){
+        if(materia != ""){
+            listaMaterias.add(materia)
+        }
+    }
+
     fun checarDados(){
         if(nome == "" && ra.length <= 7 ){
             throw Exception("Estudante cadastrado de maneira incorreta")

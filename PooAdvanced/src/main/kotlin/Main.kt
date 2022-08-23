@@ -66,8 +66,18 @@ fun main() {
 
     throw Exception(mensagem do erro)
      */
+    /*
+    try {
+        println("Digite o n1: ")
+        val n1 = readln().toInt()
 
-    val estudante = Estudante("", "45456")
+        println("Digite o n2: ")
+        val n2 = readln().toInt()
+
+    }catch (e: Exception){
+        println(e.message)
+    }
+     */
 
 
 }
