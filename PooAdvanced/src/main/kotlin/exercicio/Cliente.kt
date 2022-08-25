@@ -6,7 +6,9 @@ class Cliente (
     var telefone: String
     ){
 
-    private val listaCompras = mutableListOf<String>()
+    //Atributos que controlam a lista de compras
+    private val _listaCompras = mutableListOf<String>()
+    val listaCompras: List<String> = _listaCompras
 
     init {
         checarDados()
@@ -14,7 +16,7 @@ class Cliente (
 
     fun addCompra(compra: String){
         if(compra.isNotBlank()){
-            listaCompras.add(compra)
+            _listaCompras.add(compra)
             println("Produto adicionado com sucesso!")
         }else{
             println("Produto Inválido")
@@ -22,8 +24,8 @@ class Cliente (
     }
 
     fun removeCompra(compra: String){
-        if(listaCompras.contains(compra)){
-            listaCompras.remove(compra)
+        if(_listaCompras.contains(compra)){
+            _listaCompras.remove(compra)
             println("Produto removido com sucesso!")
         }else{
             println("O produto $compra não existe na lista!")
@@ -32,7 +34,7 @@ class Cliente (
 
     fun exibirCompras(){
         println("***Lista de Compras***\n")
-        listaCompras.forEach {
+        _listaCompras.forEach {
             println(it)
         }
     }

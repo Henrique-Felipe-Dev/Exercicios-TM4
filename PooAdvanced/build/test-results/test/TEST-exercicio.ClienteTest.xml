@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="exercicio.ClienteTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-25T13:48:30" hostname="DESKTOP-8C67S5J" time="0.041">
+  <properties/>
+  <testcase name="criarClienteTest()" classname="exercicio.ClienteTest" time="0.041"/>
+  <system-out><![CDATA[Produto adicionado com sucesso!
+Produto adicionado com sucesso!
+Produto adicionado com sucesso!
+Produto adicionado com sucesso!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
